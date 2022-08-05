@@ -99,6 +99,8 @@ You can use Amazon Kinesis Data Streams to collect and process large streams of 
 ### Kinesis Data Firehose
 Amazon Kinesis Data Firehose is a fully managed service for delivering real-time streaming data to destinations such as Amazon Simple Storage Service (Amazon S3), Amazon Redshift, Amazon OpenSearch Service, Splunk, and any custom HTTP endpoint or HTTP endpoints owned by supported third-party service providers, including Datadog, Dynatrace, LogicMonitor, MongoDB, New Relic, and Sumo Logic. Kinesis Data Firehose is part of the Kinesis streaming data platform, along with Kinesis Data Streams, Kinesis Video Streams, and Amazon Kinesis Data Analytics. With Kinesis Data Firehose, you don't need to write applications or manage resources. You configure your data producers to send data to Kinesis Data Firehose, and it automatically delivers the data to the destination that you specified. You can also configure Kinesis Data Firehose to transform your data before delivering it.
 
+![Kinesis Data FireHouse](https://github.com/mrStasSmirnoff/Udemy-AWS-ML/blob/main/notes_images/2_kinesis_data_firehouse.png?raw=true)
+
    * Fully Managed Service, no administration
    * Near Real Time (60 seconds latency minimum for non full batches)
    * Data Ingestion into Redshift / Amazon S3 / ElasticSearch / Splunk
@@ -137,6 +139,8 @@ You can use the AWS Glue console to discover data, transform it, and make it ava
     * Schemas are versioned
   * Integrates with Athena or Redshift Spectrum (schema & data discovery)
   * Glue Crawlers can help build the Glue Data Catalog
+
+![Glue Data Catalog](https://github.com/mrStasSmirnoff/Udemy-AWS-ML/blob/main/notes_images/2_glue_data_catalog.png?raw=true)
 
 ### Glue Data Catalog - Crawlers
   * Crawlers go through your data to infer schemas and partitions
@@ -226,7 +230,7 @@ The following components of AWS Data Pipeline work together to manage your data:
 
 ### AWS Data Pipeline Example
 
-
+![AWS Data Pipeline Example](https://github.com/mrStasSmirnoff/Udemy-AWS-ML/blob/main/notes_images/2_data_pipeline_example.png?raw=true)
 
 
 ### AWS Data Pipeline vs Glue
@@ -310,3 +314,6 @@ With Step Functions' built-in controls, you examine the state of each step in yo
   * Train a Machine Learning Model
   * Tune a Machine Learning Model
   * Manage a Batch Job
+
+![Train ML model](https://github.com/mrStasSmirnoff/Udemy-AWS-ML/blob/main/notes_images/2_step_function_train_ml_model.png?raw=true)
+
